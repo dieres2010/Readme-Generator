@@ -27,11 +27,11 @@ THEN I am taken to the corresponding section of the README
 
 ## Sample of Generated README.md file:
 
-![Image](./Develop\Image\Readme.png)
+![Image](./Develop/Image/Readme.png)
 
 ## Video
 
-![Video](./Develop\video\ReadmeGenerator.mp4)
+![Video](./Develop/video/ReadmeGenerator.mp4)
 
 
 Github Repository URL:
