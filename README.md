@@ -25,3 +25,15 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
+## Sample of Generated README.md file:
+
+[Image](Develop\Image\Readme.png)
+
+## Video
+
+[Video](Develop\video\ReadmeGenerator.mp4)
+
+
+Github Repository URL:
+
+https://github.com/dieres2010/Readme-Generator.git
