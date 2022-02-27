@@ -2,6 +2,7 @@
 module.exports = templateData => {
     
     return `
+${templateData.badge}
 # ${templateData.title}
 ${templateData.descr}
 ## Table of Contents:
@@ -14,18 +15,18 @@ ${templateData.descr}
 ### Installation
 In order to install the necessary modules, run the next commands in the console:
 ${templateData.installation}
-# Usage:
+### Usage:
 ${templateData.usage}
-### License:
-This project is licensed under:
+### License: 
+This project is licensed under: 
 ${templateData.license}
 ### Contributing:
 ${templateData.contributing}
 ### Tests:
-In order to test, run the following comand(s) in the console:
+In order to test, run the following comand(s) in the console: 
 ${templateData.tests}
 ### Questions:
-If you have any questions contact me at:
+If you have any questions contact me at: 
 [Github](https://github.com/${templateData.github}) or at Email: ${templateData.email}
     `;
   };

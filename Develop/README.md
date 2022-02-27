@@ -1,4 +1,5 @@
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 # c
 d
 ## Table of Contents:
@@ -15,7 +16,7 @@ e
 f
 ### License:
 This project is licensed under:
-BSD
+BSD 3
 ### Contributing:
 g
 ### Tests:
