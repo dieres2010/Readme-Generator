@@ -18,7 +18,7 @@ ${templateData.installation}
 ### Usage:
 ${templateData.usage}
 ### License: 
-This project is licensed under: 
+This ${templateData.title} project is licensed under: 
 ${templateData.license}
 ### Contributing:
 ${templateData.contributing}

@@ -3,7 +3,9 @@
 const inquirer = require('inquirer');
 const generateReadme = require('./src/readme-template.js');
 const writeFile = require('./utils/generateMarkdown.js');
+
 var badge = '';
+
 // Create an array of questions for user input
 
 var questions = readmeData => {
@@ -121,6 +123,7 @@ var questions = readmeData => {
 
 questions()
 .then(readmeData => {
+  // if License information was entered, assign badge for the respective license
   if (readmeData.confirmLicense) {
     switch (readmeData.license) {
       case 'MIT':
@@ -139,13 +142,11 @@ questions()
         badge = '';
     };
   };
-  readmeData.badge = badge;
 
-  console.log(readmeData);
-    return generateReadme(readmeData);
+  readmeData.badge = badge;
+  return generateReadme(readmeData);
 })
 .then(pageHTML => {
-//  console.log(pageHTML);
   return writeFile(pageHTML);
 })
 .then(writeFileResponse => {
@@ -155,8 +156,3 @@ questions()
  console.log(err);
 });
 
-// TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init();
